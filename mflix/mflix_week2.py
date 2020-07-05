@@ -20,6 +20,17 @@ project_pipeline =[
             'plot': 1,
             'fullPlot': '$fullplot',
             'rated': '$rating',
+            'released': {
+                '$cond': {
+                    'if': {'$ne': ['$released', '']},
+                    'then': {
+                        '$dateFromString': {
+                            'dateString': '$released'
+                        }
+                    },
+                    'else': ''
+                }
+            },
             'imdb': {
                 'id': '$imdbID',
                 'rating': '$imdbRating',
