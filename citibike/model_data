@@ -1,0 +1,28 @@
+{
+  "_id": ObjectId("572bb8222b288919b68adfa5"),
+  "tripduration": null,
+  "start station id": 279,
+  "start station name": "Peck Slip & Front St",
+  "end station id": 268,
+  "end station name": "Howard St & Centre St",
+  "bikeid": 22820,
+  "usertype": "Customer",
+  "birth year": "",
+  "gender": 0,
+  "start station location": {
+    "type": "Point",
+    "coordinates": [
+      -74.00167,
+      40.707873
+    ]
+  },
+  "end station location": {
+    "type": "Point",
+    "coordinates": [
+      -73.99973337,
+      40.71910537
+    ]
+  },
+  "start time": ISODate("2016-01-01T17:19:38Z"),
+  "stop time": ISODate("2016-01-01T17:29:42Z")
+}
