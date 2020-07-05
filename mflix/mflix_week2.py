@@ -8,6 +8,16 @@ moviesInitial = mflix.movies_initial
 # clean data and put it in movies_intial_cleaned
 project_pipeline =[
     {
+      '$addFields': {
+          'lastupdated': {
+              '$arrayElemAt': [
+                  {'$split': ['$lastupdated', '.']},
+                  0
+                ]
+          }
+        }
+    },
+    {
         '$project': {
             'title': 1,
             'year': 1,
@@ -39,7 +49,18 @@ project_pipeline =[
             'metacritic': 1,
             'awards': 1,
             'type': 1,
-            'lastUpdated': '$lastupdated',
+            'lastUpdated': {
+                '$cond': {
+                    'if': {'ne': ['$lastupdated', '']},
+                    'then': {
+                        '$dateFromString': {
+                            'dateString': '$lastupdated',
+                            'timezone': 'America/New_York'
+                        }
+                    },
+                    'else': ''
+                }
+            },
         },
     },
     {
