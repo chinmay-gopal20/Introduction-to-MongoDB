@@ -41,6 +41,7 @@ project_pipeline =[
                     'else': ''
                 }
             },
+            'runtime': 1,
             'imdb': {
                 'id': '$imdbID',
                 'rating': '$imdbRating',
