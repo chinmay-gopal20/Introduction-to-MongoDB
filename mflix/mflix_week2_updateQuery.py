@@ -10,15 +10,15 @@ moviesInitial = mflix.movies_initial
 moviesInitialCleaned = mflix.movies_initial_cleaned
 movies = mflix.movies
 
-# copy_pipeline = [
-#     {
-#         '$out': 'movies'
-#     }
-# ]
-#
-# moviesInitial.aggregate(copy_pipeline)
-#
-# print("Movies_intial copied to movies")
+copy_pipeline = [
+    {
+        '$out': 'movies'
+    }
+]
+
+moviesInitial.aggregate(copy_pipeline)
+
+print("Movies_intial copied to movies")
 
 runtime_pat = re.compile(r'([0-9]+) min')
 
@@ -27,7 +27,7 @@ batchSize = 1000
 count = 0
 updates = []
 
-for movie in movies.find().limit(2000):
+for movie in movies.find():
     fields_to_set = {}
     fields_to_unset = {}
 
@@ -108,3 +108,19 @@ for movie in movies.find().limit(2000):
 
 if updates:
     movies.bulk_write(updates)
+
+# Filtering in Arrays
+filter1 = {'languages': 'Korean'} #filters documents having korean as language, irrespective of having other languages
+filter2 = {'languages': {'$all': ['Korean', 'English']}} #both korean and english should be language, irrespective of having other languages
+filter3 = {'languages': {'$in': ['Korean', 'English']}} #either of korean and english should present, irrespective of having other languages
+filter4 = {'languages': ['Korean', 'English']} #matches in the excat order -> Korean and then English and only these langs
+filter5 = {'languages': ['English', 'Korean']} #matches in the excat order -> English and then Korean and only these langs
+filter6 = {'languages.0': 'Korean'} #korean as primary laguage at index 0
+
+filters = [filter1, filter2, filter3, filter4, filter5, filter6]
+
+count = 1
+for filter in filters:
+    filterResult = moviesInitialCleaned.find(filter)
+    print('filter', count, ' - ', filterResult.count())
+    count += 1
