@@ -20,7 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd574830-4172-4ce3-a78b-32a33e5c107d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/citibike/querying-for-documents-on-an-array-field.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/citibike/finding-things-nearby.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/citibike/finding-things-nearby.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/citibike/geospatial-queries.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/citibike/improve-query-performance.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/citibike/improve-query-performance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/citibike/indexes-on-movies-part2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/citibike/indexes-on-movies.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,12 +51,55 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/citibike/querying-for-documents-on-an-array-field.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/citibike/finding-things-nearby.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.query-on-array">
+  <component name="RunManager" selected="Python.finding-things-nearby">
+    <configuration name="finding-things-nearby" type="PythonConfigurationType" factoryName="Python">
+      <module name="Intro-to-MongoDB" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="H:\edu\coursera\Intro-to-MongoDB\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/citibike" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/citibike/finding-things-nearby.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="improve-query-performance" type="PythonConfigurationType" factoryName="Python">
+      <module name="Intro-to-MongoDB" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="H:\edu\coursera\Intro-to-MongoDB\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/citibike" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/citibike/improve-query-performance.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="people-raw" type="PythonConfigurationType" factoryName="Python">
       <module name="Intro-to-MongoDB" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -115,8 +165,10 @@
     </configuration>
     <list>
       <item itemvalue="Python.people-raw" />
-      <item itemvalue="Python.w2_updateQuery" />
       <item itemvalue="Python.query-on-array" />
+      <item itemvalue="Python.improve-query-performance" />
+      <item itemvalue="Python.finding-things-nearby" />
+      <item itemvalue="Python.w2_updateQuery" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -142,36 +194,37 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594453026093">
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595053036174">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1594453026093" />
+    <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1595053036174" />
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1594453954698">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1594453954698" />
-    <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1594453023321">
+    <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1595053034572">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1594453023321" />
-    <state width="1515" height="232" key="GridCell.Tab.0.bottom" timestamp="1594453996122">
+    <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1595053034572" />
+    <state width="1515" height="246" key="GridCell.Tab.0.bottom" timestamp="1595056689047">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="232" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1594453996122" />
-    <state width="1515" height="232" key="GridCell.Tab.0.center" timestamp="1594453996122">
+    <state width="1515" height="246" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1595056689047" />
+    <state width="1515" height="246" key="GridCell.Tab.0.center" timestamp="1595056689047">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="232" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1594453996122" />
-    <state width="1515" height="232" key="GridCell.Tab.0.left" timestamp="1594453996121">
+    <state width="1515" height="246" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1595056689047" />
+    <state width="1515" height="246" key="GridCell.Tab.0.left" timestamp="1595056689047">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="232" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1594453996121" />
-    <state width="1515" height="232" key="GridCell.Tab.0.right" timestamp="1594453996122">
+    <state width="1515" height="246" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1595056689047" />
+    <state width="1515" height="246" key="GridCell.Tab.0.right" timestamp="1595056689047">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="232" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1594453996122" />
+    <state width="1515" height="246" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1595056689047" />
     <state x="562" y="135" key="RollbackChangesDialog" timestamp="1594453738076">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
